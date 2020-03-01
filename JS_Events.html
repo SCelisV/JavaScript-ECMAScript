@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Events
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JavaScript Events
+        </h1>
+        <h3>
+            HTML events are "things" that happen to HTML elements. <br>
+
+            When JavaScript is used in HTML pages, JavaScript can "react" on these events. <br>
+        </h3>
+        <h2>HTML Events</h2>
+        <h3>
+            An HTML event can be something the browser does, or something a user does. <br>
+
+            Here are some examples of HTML events: <br>
+            
+            An HTML web page has finished loading <br>
+            An HTML input field was changed <br>
+            An HTML button was clicked <br>
+            Often, when events happen, you may want to do something. <br>
+            
+            JavaScript lets you execute code when events are detected. <br>
+            
+            HTML allows event handler attributes, with JavaScript code, to be added to HTML elements. <br>
+            
+            With single quotes: <element event='some JavaScript'></element><br>
+            
+            With double quotes: <element event="some JavaScript"></element><br>
+            
+            In the following example, an onclick attribute (with code), is added to a button element: <br>
+            
+            the JavaScript code changes the content of the element with id="demo". <br>
+            
+            onclick="document.getElementById('demo').innerHTML = Date()" <br>
+        </h3>
+        <h5><a href="MyEx_JS_Events_01.html" target="_blank">Exercise: JS_Events_01</a></h5>
+        <h3>
+            
+            In the next example, the code changes the content of its own element (using this.innerHTML): <br>
+            
+            onclick="this.innerHTML = Date()" <br>
+        </h3>
+        <h5><a href="MyEx_JS_Events_02.html" target="_blank">Exercise: JS_Events_02</a></h5>
+        <h3>
+            JavaScript code is often several lines long. It is more common to see event attributes calling functions: <br>            
+            onclick="displayDate()" <br>
+        </h3>
+        <h5><a href="MyEx_JS_Events_03.html" target="_blank">Exercise: JS_Events_03</a></h5>
+        <h3>
+
+                <table>
+                        <tr><td>onchange</td><td>An HTML element has been changed</td></tr>
+                        <tr><td>onclick</td><td>The user clicks an HTML element</td></tr>
+                        <tr><td>onmouseover</td><td>The user moves the mouse over an HTML element</td></tr>
+                        <tr><td>onmouseout</td><td>The user moves the mouse away from an HTML element</td></tr>
+                        <tr><td>onkeydown</td><td>The user pushes a keyboard key</td></tr>
+                        <tr><td>onload</td><td>The browser has finished loading the page</td></tr>
+                </table>
+        </h3>
+        
+	</body>
+</html>

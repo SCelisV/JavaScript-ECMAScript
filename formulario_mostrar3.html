@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title> JavaScript - formulario mostrar3- </title>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		function mostrar(){
+			espacio = " ";
+			//alert(window.document.forms.Pedido.elements[2].value);
+			with(window.document.forms.Pedido){
+				alert("Nombre:" + espacio + Nombre.value);
+				alert("Apellidos:" + espacio + Apellidos.value);
+				alert("eMail:" + espacio + eMail.value);				
+				//alert(Nombre.value + espacio + Apellidos.value + espacio + eMail.value);
+			}	
+		}
+		-->
+		</script>
+
+	</head>
+	 <body>
+		<form name="Pedido" action="" method="post">
+			<p>
+				Nombre: <input type="text" name="Nombre" />
+				<br>
+				Apellidos: <input type="text" name="Apellidos" />
+				<br>
+				eMail: <input type="text" name="eMail" />
+				<br>
+				<input type="submit" name="Submit" value="Enviar" />
+				<br>
+				<input type="reset" name="Reset" value="Reestablecer" onclick="mostrar()"/>
+			</p>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title> JavaScript - formulario procesar - checkBox - </title>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		function Estudios(){
+			with(window.document.forms.Contacto){
+				var seleccionar = "Ha seleccionado: "
+				if(IN.checked == true){
+					seleccionar +=	"bachillerato";	
+				}
+				if(DI.checked == true){
+					seleccionar +=	", diplomatura";	
+				}
+				if(LI.checked == true){
+					seleccionar +=	", licenciatura";			
+				}
+				if(MD.checked == true){
+					seleccionar +=	", máster";		
+				}
+				if(DD.checked == true){
+					seleccionar +=	", doctorado";			
+				}
+				
+				
+			}
+			alert(seleccionar);
+		}
+		-->
+		</script>
+
+	</head>
+	 <body>
+		<form name="Contacto" action="" method="post">
+			<p>
+				<input type="checkbox" name="IN" value="IN" />Bachillerato<br/>
+				<input type="checkbox" name="DI" value="DI" />Diplomatura<br/>
+				<input type="checkbox" name="LI" value="LI" />Licenciatura<br/>
+				<input type="checkbox" name="MD" value="MD" />Master<br/>
+				<input type="checkbox" name="DD" value="DD" />Doctorado<br/>
+				<input type="reset" name="Procesar" value="Procesar" onClick="Estudios()" />
+
+			</p>
+		</form>
+	</body>
+</html>

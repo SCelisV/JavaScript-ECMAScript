@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Scope
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JavaScript Scope
+        </h1>
+        <h2>
+            Scope determines the accessibility (visibility) of variables. <br>
+            JavaScript Function Scope <br>
+            In JavaScript there are two types of scope: <br>
+
+            Local scope <br>
+            Global scope <br>
+
+            Scope determines the accessibility (visibility) of these variables. <br>
+
+            Variables defined inside a function are not accessible (visible) from outside the function.
+        </h2>
+        <h2>
+            Local JavaScript Variables
+        </h2>
+        <h3>
+            Variables declared within a JavaScript function, become LOCAL to the function. <br>
+
+            Local variables have local scope: They can only be accessed within the function. <br>
+            
+            Example <br>
+            // code here can not use carName <br>
+            
+            function myFunction() { <br>
+                var carName = "Volvo"; <br>
+            
+                // code here can use carName <br>
+            
+            }
+        </h3>
+        <h3>
+            Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. <br>
+
+            Local variables are created when a function starts, and deleted when the function is completed. <br>
+        </h3>
+		<h5>
+            <a href="MyEx_JS_Scope_01.html" target="_blank">Example: JS_Scope_01</a>
+        </h5>
+        <h2>
+            Global JavaScript Variables
+        </h2>
+        <h3>
+            A variable declared outside a function, becomes GLOBAL. <br>
+
+            A global variable has global scope: All scripts and functions on a web page can access it. <br>
+            
+            Example <br>
+            var carName = " Volvo"; <br>
+            
+            // code here can use carName <br>
+            
+            function myFunction() { <br>
+            
+                // code here can use carName  <br>
+            
+            } <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Scope_02.html" target="_blank">Example: JS_Scope_02</a>
+        </h5>
+        <h3>
+            JavaScript Variables <br>
+            In JavaScript, objects and functions are also variables. <br>
+
+            Scope determines the accessibility of variables, objects, and functions from different parts of the code. <br>
+        </h3>
+        <h2>
+            Automatically Global
+        </h2>
+        <h3>
+
+            If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable. <br>
+
+            This code example will declare a global variable carName, even if the value is assigned inside a function. <br>
+
+            Example <br>
+            myFunction(); <br>
+
+            // code here can use carName <br>
+
+            function myFunction() { <br>
+                carName = "Volvo"; <br>
+            } <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Scope_03.html" target="_blank">Exercise: JS_Scope_03</a>
+        </h5>
+        <h2>Strict Mode</h2>
+        <h3>
+            All modern browsers support running JavaScript in "Strict Mode". <br>
+
+            You will learn more about how to use strict mode in a later chapter of this tutorial. <br>
+
+            Global variables are not created automatically in "Strict Mode". <br>
+        </h3>
+        <h2>Global Variables in HTML</h2>
+        <h3>
+            With JavaScript, the global scope is the complete JavaScript environment. <br>
+
+            In HTML, the global scope is the window object. All global variables belong to the window object. <br>
+            
+            Example <br>
+            var carName = "Volvo"; <br>
+            
+            // code here can use window.carName <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Scope_04.html" target="_blank">Exercise: JS_Scope_04</a>
+        </h5>
+        <h2>Warning</h2>
+        <h3>
+            Do NOT create global variables unless you intend to. <br>
+
+            Your global variables (or functions) can overwrite window variables (or functions). <br>
+            Any function, including the window object, can overwrite your global variables and functions. <br>
+        </h3>
+        <h2>The Lifetime of JavaScript Variables</h2>
+        <h3>
+            The lifetime of a JavaScript variable starts when it is declared. <br>
+
+            Local variables are deleted when the function is completed. <br>
+
+            In a web browser, global variables are deleted when you close the browser window (or tab), but remain available to new pages loaded into the same window. <br>
+        </h3>
+        <h2>Function Arguments</h2>
+        <h3>
+            Function arguments (parameters) work as local variables inside functions.
+        </h3>
+	</body>
+</html>

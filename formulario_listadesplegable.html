@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title> JavaScript - formulario cambiar dinamicamente una lista desplegable - combo - </title>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		function RestablecerListaDesplegable(valorObj){
+			with(window.document.forms.Contacto){
+				if(valorObj == 1){
+					ListaDesplegable[0].text = "Classic";
+					ListaDesplegable[0].value = "1";
+
+					ListaDesplegable[1].text = "Police Cruizer";
+					ListaDesplegable[1].value = "2";
+					
+				}
+				if(valorObj == 2){
+					ListaDesplegable[0].text = "Ford";
+					ListaDesplegable[0].value = "1";
+
+					ListaDesplegable[1].text = "Chevrolet Cruizer";
+					ListaDesplegable[1].value = "2";
+				
+				}
+				
+			}
+		}
+		-->
+		</script>
+
+	</head>
+	 <body>
+		<form name="Contacto" action="" method="post">
+			<p>
+				<select name="ListaDesplegable" size="2">
+					<option value="1">Classic
+					<option value="2">Police Cruizer
+				</select>
+				<br/>
+				<input type="radio" name"vehiculos" checked="true" value="1" onClick="RestablecerListaDesplegable(this.value)" />Motocicletas
+				<input type="radio" name"vehiculos"  value="2" onClick="RestablecerListaDesplegable(this.value)" />Coches
+				<br/>
+				<input type="submit" name="Submit" value="Enviar" />
+				<br/>
+				<input type="reset" name="Reestablecer" value="Reestablecer" />
+			</p>
+		</form>
+	</body>
+</html>

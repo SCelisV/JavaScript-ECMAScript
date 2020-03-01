@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exercises - JS DataTypes</title>
+
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            * {
+                box-sizing: border-box;
+            }  
+        </style>
+    </head>
+    <body>
+
+        <h2>JavaScript Data Types</h2>
+
+        <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+        
+        <p id="demo"></p>
+        
+        <script>
+            var x;               // Now x is undefined
+            x = 5;               // Now x is a Number
+            x = "John";          // Now x is a String
+            
+            document.getElementById("demo").innerHTML = x;
+        </script>
+    </body>
+</html>

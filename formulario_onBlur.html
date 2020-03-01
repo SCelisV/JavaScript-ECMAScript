@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title> JavaScript - formulario_validaEmail - onBlur</title>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		function validareMail(direccionEmail){
+			var espacio = ' ';
+			var ubicacion = direccionEmail.indexOf('@');
+			document.write('direccionEmail es:' + espacio + ubicacion);
+			if(ubicacion == -1){
+				alert('Ha introducido una direccion de correo electronico no valida.');
+			}
+
+		}		
+		-->
+		</script>
+
+	</head>
+	 <body>
+		<form action="" method="">
+			<p>
+				Nombre: <input type="text" name="Nombre" />
+				<br>
+				Apellidos: <input type="text" name="Apellidos" />
+				<br>
+				eMail: <input type="text" name="eMail" onBlur="validareMail(this.value)"/>
+				<br>
+				<input type="submit" name="Submit" value="Enviar" />
+				<br>
+				<input type="reset" name="Reset" value="Reestablecer"/>
+			</p>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>JavaScript - Cadenas - Substring - Substr </title>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+				
+		-->
+		</script>
+	</head>
+	 <body>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+
+			var espacio = ' ';
+			var direccionEmail = 'soniacelis@fixel.es';
+			var posicionInicio = direccionEmail.indexOf('@') + 1;
+			var longitud = direccionEmail.length;
+			var posicionFinal = (longitud - posicionInicio);
+
+			document.write('direccionEmail es:' + espacio + direccionEmail);
+			document.write('<br>');
+			document.write('posicionInicio es: ' + espacio + posicionInicio);
+			document.write('<br>');
+			document.write('posicionFinal es: ' + espacio + posicionFinal);
+			document.write('<br>');
+
+
+			var nuevaSubcadena = direccionEmail.substr(posicionInicio,posicionFinal);
+			document.write('<br>');
+			document.write('nuevaSubcadena es:' + espacio + nuevaSubcadena);
+			
+
+		-->
+		</script>
+	</body>
+</html>

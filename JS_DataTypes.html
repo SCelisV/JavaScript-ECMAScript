@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Data Types
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JavaScript Data Types
+        </h1>
+        <h3>
+            JavaScript variables can hold many data types: numbers, strings, objects and more: <br>
+
+            var length = 16;                               // Number <br>
+            var lastName = "Johnson";                      // String <br>
+            var x = {firstName:"John", lastName:"Doe"};    // Object <br>
+        </h3>
+        <h2>The Concept of Data Types</h2>
+        <h3>
+            In programming, data types is an important concept. <br>
+
+            To be able to operate on variables, it is important to know something about the type. <br>
+            
+            Without data types, a computer cannot safely solve this: <br>
+            var x = 16 + "Volvo"; <br>
+            Does it make any sense to add "Volvo" to sixteen? Will it produce an error or will it produce a result? <br>
+            JavaScript will treat the example above as: <br>
+            var x = "16" + "Volvo"; <br>
+            When adding a number and a string, JavaScript will treat the number as a string. <br>
+            var x = 16 + "Volvo"; ór var x = "Volvo" + 16;<br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_01.html" target="_blank">Exercices: JS_DataTypes_01</a>
+        </h5>
+        <h3>
+            JavaScript evaluates expressions from left to right. Different sequences can produce different results: <br>
+            In this example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo". <br>
+            var x = 16 + 4 + "Volvo"; <br>
+            20Volvo <br>
+            
+            In this example, since the first operand is a string, all operands are treated as strings.
+            var x = "Volvo" + 16 + 4; <br>
+            Volvo164 <br>
+        </h3>
+        <h2>JavaScript Types are Dynamic.</h2>
+        <h3>
+            JavaScript has dynamic types. This means that the same variable can be used to hold different data types: <br>
+            
+            var x;           // Now x is undefined <br>
+            x = 5;           // Now x is a Number <br>
+            x = "John";      // Now x is a String <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_02.html" target="_blank">Exercices: JS_DataTypes_02</a>
+        </h5>
+        <h2>JavaScript Strings</h2>
+        <h3>
+            A string (or a text string) is a series of characters like "John Doe". <br>
+            Strings are written with quotes. You can use single or double quotes: <br>
+            var carName = "Volvo XC60";   // Using double quotes <br>
+            var carName = 'Volvo XC60';   // Using single quotes <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_03.html" target="_blank">Exercices: JS_DataTypes_03</a>
+        </h5>
+        <h3>
+            You can use quotes inside a string, as long as they don't match the quotes surrounding the string: <br>
+            
+            var answer = "It's alright";             // Single quote inside double quotes <br>
+            var answer = "He is called 'Johnny'";    // Single quotes inside double quotes <br>
+            var answer = 'He is called "Johnny"';    // Double quotes inside single quotes <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_04.html" target="_blank">Exercices: JS_DataTypes_04</a>
+        </h5>
+        <h2>JavaScript Numbers</h2>
+        <h3>
+            JavaScript has only one type of numbers. <br>
+            
+            Numbers can be written with, or without decimals: <br>
+            
+            var x1 = 34.00;     // Written with decimals <br>
+            var x2 = 34;        // Written without decimals <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_05.html" target="_blank">Exercices: JS_DataTypes_05</a>
+        </h5>
+        <h3>Extra large or extra small numbers can be written with scientific (exponential) notation: <br>
+            var y = 123e5;      // 12300000 <br>
+            var z = 123e-5;     // 0.00123 <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_06.html" target="_blank">Exercices: JS_DataTypes_06</a>
+        </h5>
+        <h2>JavaScript Booleans</h2>
+        <h3>
+            Booleans can only have two values: true or false. <br>
+            Booleans are often used in conditional testing. <br>
+            You will learn more about conditional testing later in this tutorial. <br>
+            var x = 5; <br>
+            var y = 5; <br>
+            var z = 6; <br>
+            (x == y)       // Returns true <br>
+            (x == z)       // Returns false <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_07.html" target="_blank">Exercices: JS_DataTypes_07</a>
+        </h5>
+        <h2>JavaScript Arrays</h2>
+        <h3>
+            JavaScript arrays are written with square brackets. <br>
+            Array items are separated by commas. <br>
+            The following code declares (creates) an array called cars, containing three items (car names): <br>
+            var cars = ["Saab", "Volvo", "BMW"]; <br>
+            Array indexes are zero-based, which means the first item is [0], second is [1], and so on. <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_08.html" target="_blank">Exercices: JS_DataTypes_08</a>
+        </h5>
+        <h2>JavaScript Objects</h2>
+        <h3>
+            JavaScript objects are written with curly braces. <br>
+            
+            Object properties are written as name:value pairs, separated by commas. <br>
+            
+            var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+            The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor. <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_09.html" target="_blank">Exercices: JS_DataTypes_09</a>
+        </h5>
+        <h2>The typeof Operator</h2>
+        <h3>
+            You can use the JavaScript typeof operator to find the type of a JavaScript variable. <br>
+            
+            The typeof operator returns the type of a variable or an expression: <br>
+            
+            typeof ""                  // Returns "string" <br>
+            typeof "John"              // Returns "string" <br>
+            typeof "John Doe"          // Returns "string" <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_10.html" target="_blank">Exercices: JS_DataTypes_10</a>
+        </h5>
+        <h3>
+            typeof 0                   // Returns "number" <br>
+            typeof 314                 // Returns "number" <br>
+            typeof 3.14                // Returns "number" <br>
+            typeof (3)                 // Returns "number" <br>
+            typeof (3 + 4)             // Returns "number" <br>
+        </h3>    
+        <h5>
+            <a href="MyEx_JS_DataTypes_11.html" target="_blank">Exercices: JS_DataTypes_11</a>
+        </h5>
+        <h2>Undefined</h2>
+        <h3>
+            In JavaScript, a variable without a value, has the value undefined. The typeof is also undefined. <br>
+            var car;                // Value is undefined, type is undefined <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_12.html" target="_blank">Exercices: JS_DataTypes_12</a>
+        </h5>
+        <h3>
+            Any variable can be emptied, by setting the value to undefined. The type will also be undefined. <br>
+            car = undefined;        // Value is undefined, type is undefined <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_13.html" target="_blank">Exercices: JS_DataTypes_13</a>
+        </h5>
+        <h2>Empty Values</h2>
+        <h3>
+            An empty value has nothing to do with undefined. <br>
+            An empty string has both a legal value and a type. <br>
+            var car = "";              // The value is "", the typeof is "string" <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_14.html" target="_blank">Exercices: JS_DataTypes_14</a>
+        </h5>
+        <h2>Null</h2>    
+        <h3>
+            In JavaScript null is "nothing". It is supposed to be something that doesn't exist. <br>
+            
+            Unfortunately, in JavaScript, the data type of null is an object. <br>
+            
+            You can consider it a bug in JavaScript that typeof null is an object. It should be null. <br>
+            
+            You can empty an object by setting it to null: <br>
+            
+            var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+            person = null;        // Now value is null, but type is still an object <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_15.html" target="_blank">Exercices: JS_DataTypes_15</a>
+        </h5>
+        <h3>
+            You can also empty an object by setting it to undefined: <br>
+            var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+            person = undefined;   // Now both value and type is undefined <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_16.html" target="_blank">Exercices: JS_DataTypes_16</a>
+        </h5>
+        <h2>Difference Between Undefined and Null</h2>
+        <h3>Undefined and null are equal in value but different in type: <br>
+            typeof undefined           // undefined <br>
+            typeof null                // object <br>
+            
+            null === undefined         // false <br>
+            null == undefined          // true <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_17.html" target="_blank">Exercices: JS_DataTypes_17</a>
+        </h5>
+        <h2>Primitive Data</h2>    
+        <h3>
+            A primitive data value is a single simple data value with no additional properties and methods. <br>
+            
+            The typeof operator can return one of these primitive types: <br>
+            
+            string <br>
+            number <br>
+            boolean <br>
+            undefined <br>
+            typeof "John"              // Returns "string" <br>
+            typeof 3.14                // Returns "number" <br>
+            typeof true                // Returns "boolean" <br>
+            typeof false               // Returns "boolean" <br>
+            typeof x                   // Returns "undefined" (if x has no value) <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_18.html" target="_blank">Exercices: JS_DataTypes_18</a>
+        </h5>
+        <h2>Complex Data</h2>
+        <h3>
+            The typeof operator can return one of two complex types: <br>
+            
+            function  <br>
+            object <br>
+            The typeof operator returns object for both objects, arrays, and null. <br>
+            
+            The typeof operator does not return object for functions. <br>
+            
+            typeof {name:'John', age:34} // Returns "object" <br>
+            typeof [1,2,3,4]             // Returns "object" (not "array", see note below) <br>
+            typeof null                  // Returns "object" <br>
+            typeof function myFunc(){}   // Returns "function" <br>
+            
+            The typeof operator returns "object" for arrays because in JavaScript arrays are objects.
+        </h3>
+        <h5>
+            <a href="MyEx_JS_DataTypes_19.html" target="_blank">Exercices: JS_DataTypes_19</a>
+        </h5>
+        
+    </body>
+</html>
+    
+    

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Strings
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JavaScript Strings
+        </h1>
+        <h2>A JavaScript string is zero or more characters written inside quotes.</h2>
+        <h3>var x = "John Doe";</h3>
+        <h5><a href="MyEx_JS_Strings_01.html" target="_blank">Exercise: JS_Strings_01</a></h5>
+        <h2>You can use single or double quotes:</h2>
+        <h3>
+            var carname = "Volvo XC60";  // Double quotes <br>
+            var carname = 'Volvo XC60';  // Single quotes
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Strings_02.html" target="_blank">Exercise: JS_Strings_02</a>
+        </h5>
+        <h2>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</h2>
+        <h3>
+            var answer = "It's alright"; <br>
+            var answer = "He is called 'Johnny'"; <br>
+            var answer = 'He is called "Johnny"';
+        </h3>
+        <h5><a href="MyEx_JS_Strings_03.html" target="_blank">Exercise: JS_Strings_03</a></h5>
+        <h2>String Length</h2>
+        <h3>The length of a string is found in the built in property length: <br>
+            var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+            var sln = txt.length;
+        </h3>
+        <h5><a href="MyEx_JS_Strings_04.html" target="_blank">Exercise: JS_Strings_04</a></h5>
+        <h2>Special Characters</h2>
+        <h3>
+            Because strings must be written within quotes, JavaScript will misunderstand this string: <br>
+            var x = "We are the so-called "Vikings" from the north."; <br>
+            var x = "We are the so-called \"Vikings\" from the north."; <br>
+
+            The string will be chopped to "We are the so-called ". <br>
+
+            The solution to avoid this problem, is to use the backslash escape character. <br>
+            
+            The backslash (\) escape character turns special characters into string characters:
+        </h3>
+        <h3>
+            <table>
+                <tr><td>Code</td><td>Result</td><td>Description</td></tr>
+                <tr><td>\'</td><td>'</td><td>Single quote</td></tr>
+                <tr><td>\"</td><td>"</td><td>Double quote</td></tr>
+                <tr><td>\\</td><td>\</td><td>Backslash</td></tr>
+            </table>
+        </h3>
+        <h3>The sequence \"  inserts a double quote in a string: <br>
+
+        </h3>
+        <h5><a href="MyEx_JS_Strings_05.html" target="_blank">Exercise: JS_Strings_05</a></h5>
+        <h3>The sequence \'  inserts a single quote in a string: <br>
+            var x = 'It\'s alright.';
+        </h3>
+        <h5><a href="MyEx_JS_Strings_06.html" target="_blank">Exercise: JS_Strings_06</a></h5>
+        <h3>
+            The sequence \\  inserts a backslash in a string: <br>
+
+            var x = "The character \\ is called backslash."; <br>
+        </h3>
+        <h5><a href="MyEx_JS_Strings_07.html" target="_blank">Exercise: JS_Strings_07</a></h5>
+        <h3>
+            <table>
+                <tr><td>Code</td><td>Result</td></tr>
+                <tr><td>\b</td><td>Backspace</td></tr>
+                <tr><td>\f</td><td>Form Feed</td></tr>
+                <tr><td>\n</td><td>New Line</td></tr>
+                <tr><td>\r</td><td>Carriage Return</td></tr>
+                <tr><td>\t</td><td>Horizontal Tabulator</td></tr>
+                <tr><td>\v</td><td>Vertical Tabulator</td></tr>
+            </table>
+        </h3>
+        <h2>Breaking Long Code Lines</h2>
+        <h3>
+            For best readability, programmers often like to avoid code lines longer than 80 characters. <br>
+
+            If a JavaScript statement does not fit on one line, the best place to break it is after an operator: <br>
+            
+            document.getElementById("demo").innerHTML = <br>
+            "Hello Dolly!"; <br>
+        </h3>
+        <h5><a href="MyEx_JS_Strings_08.html" target="_blank">Exercise: JS_Strings_08</a></h5>
+        <h3>
+            You can also break up a code line within a text string with a single backslash: <br>
+
+            document.getElementById("demo").innerHTML = "Hello \ <br>
+            Dolly!";
+        </h3>
+        <h5><a href="MyEx_JS_Strings_09.html" target="_blank">Exercise: JS_Strings_09</a></h5>
+        <h3>
+            A safer way to break up a string, is to use string addition: <br>
+
+            document.getElementById("demo").innerHTML = "Hello " +  <br>
+            "Dolly!";
+        </h3>
+        <h5><a href="MyEx_JS_Strings_10.html" target="_blank">Exercise: JS_Strings_10</a></h5>
+        <h3>
+            You cannot break up a code line with a backslash: <br>
+
+            document.getElementById("demo").innerHTML = \  <br>
+            "Hello Dolly!"; <br>
+        </h3>
+        <h5><a href="MyEx_JS_Strings_11.html" target="_blank">Exercise: JS_Strings_11</a></h5>
+        <h2>Strings Can be Objects</h2>
+        <h3>
+            Normally, JavaScript strings are primitive values, created from literals: <br>
+
+            var firstName = "John"; <br>
+            
+            But strings can also be defined as objects with the keyword new: <br>
+            
+            var firstName = new String("John"); <br>
+            
+            var x = "John"; <br>
+            var y = new String("John"); <br>
+            
+            // typeof x will return string <br>
+            // typeof y will return object <br>
+        </h3>
+        <h5><a href="MyEx_JS_Strings_12.html" target="_blank">Exercise: JS_Strings_12</a></h5>
+        <h3>
+            Don't create strings as objects. It slows down execution speed. <br>
+            The new keyword complicates the code. This can produce some unexpected results: <br>
+        </h3>
+        <h3>
+            When using the == operator, equal strings are equal: <br>
+
+            var x = "John"; <br>
+            var y = new String("John"); <br>
+            
+            // (x == y) is true because x and y have equal values <br>
+        </h3>
+        <h5><a href="MyEx_JS_Strings_13.html" target="_blank">Exercise: JS_Strings_13</a></h5>
+        <h3>
+            When using the === operator, equal strings are not equal, because the === operator expects equality in both type and value. <br>
+
+            var x = "John"; <br>
+            var y = new String("John"); <br>
+            
+            // (x === y) is false because x and y have different types (string and object)
+        </h3>
+        <h5><a href="MyEx_JS_Strings_14.html" target="_blank">Exercise: JS_Strings_14</a></h5>
+        <h3>
+            Or even worse. Objects cannot be compared: <br>
+            
+            var x = new String("John"); <br>
+            var y = new String("John"); <br>
+            
+            // (x == y) is false because x and y are different objects <br>
+        </h3>
+        <h5><a href="MyEx_JS_Strings_15.html" target="_blank">Exercise: JS_Strings_15</a></h5>
+        <h3>
+            var x = new String("John"); <br>
+            var y = new String("John"); <br>
+            
+            // (x === y) is false because x and y are different objects
+        </h3>
+        <h5><a href="MyEx_JS_Strings_16.html" target="_blank">Exercise: JS_Strings_16</a></h5>
+	</body>
+</html>

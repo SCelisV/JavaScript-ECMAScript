@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exercises - JS String Methods</title>
+
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            * {
+                box-sizing: border-box;
+            }  
+        </style>
+    </head>
+    <body>
+
+        <h2>JavaScript String Methods</h2>
+
+        <p>Display the position of the first occurrence of "World" in the variable txt.</p>
+
+        <p id="demo"></p>
+        
+        <script>
+                var txt = "Hello World";
+                var pos = txt.indexOf("World");
+                document.getElementById("demo").innerHTML = pos;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exercises - JS String Methods</title>
+
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            * {
+                box-sizing: border-box;
+            }  
+        </style>
+    </head>
+    <body>
+        <h2>JavaScript String Methods</h2>
+
+        <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+        
+        <button onclick="myFunction()">Try it</button>
+        
+        <p id="demo">Please visit Microsoft and Microsoft!</p>
+        
+        <script>
+            function myFunction() {
+                var str = document.getElementById("demo").innerHTML; 
+                var txt = str.replace("Microsoft","W3Schools");
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+    </body>
+</html>

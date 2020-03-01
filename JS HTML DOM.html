@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JS HTML DOM
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JS HTML DOM
+        </h1>
+        <h3>
+            With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+        </h3>
+        <table>
+            <tr>
+                <td>
+                    <h4>In the example, getElementById is a method, while innerHTML is a property.</h4>
+                    <h5>document.getElementById("demo").innerHTML = "Hello World!"</h5>
+                    <h5>The innerHTML property can be used to get or change any HTML element, including html and body</h5>
+                        <p id="demo"></p>
+                            <script>
+                                document.getElementById("demo").innerHTML = "Hello World!";
+                            </script>
+                </td>
+                <td>
+                    <h4>Finding HTML Elements</h4>
+                    <h5></h5>
+                    <table>
+                        <tr>
+                            <td>Method</td>
+                            <td>Description</td>
+                        </tr>
+                        <tr>
+                            <td>document.getElementById(id)	</td>
+                            <td>Find an element by element id</td>
+                        </tr>
+                        <tr>
+                            <td>document.getElementsByTagName(name)</td>
+                            <td>Find elements by tag name</td>
+                        </tr>
+                        <tr>
+                            <td>document.getElementsByClassName(name)</td>
+                            <td>Find elements by class name</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Changing HTML Elements</h4>
+                    <h5></h5>
+                        <table>
+                            <tr>
+                                <td>Method</td>
+                                <td>Description</td>
+                            </tr>
+                            <tr>
+                                <td>element.innerHTML =  new html content</td>
+                                <td>Change the inner HTML of an element</td>
+                            </tr>
+                            <tr>
+                                <td>element.attribute = new value</td>
+                                <td>Change the attribute value of an HTML element</td>
+                            </tr>
+                            <tr>
+                                <td>element.setAttribute(attribute, value)</td>
+                                <td>Change the attribute value of an HTML element</td>
+                            </tr>
+                            <tr>
+                                <td>element.style.property = new style</td>
+                                <td>Change the style of an HTML element</td>
+                            </tr>
+                        </table>
+                </td>
+                <td>
+                    <h4>Adding and Deleting Elements</h4>
+                    <h5></h5>
+                    <table>
+                        <tr>
+                            <td>Method</td>
+                            <td>Description</td>
+                        </tr>
+                        <tr>
+                            <td>document.createElement(element)</td>
+                            <td>Create an HTML element</td>
+                        </tr>
+                        <tr>
+                            <td>document.removeChild(element)</td>
+                            <td>Remove an HTML element</td>
+                        </tr>
+                        <tr>
+                            <td>document.appendChild(element)</td>
+                            <td>Add an HTML element</td>
+                        </tr>
+                        <tr>
+                            <td>document.replaceChild(element)</td>
+                            <td>Replace an HTML element</td>
+                        </tr>
+                        <tr>
+                            <td>document.write(text)</td>
+                            <td>Write into the HTML output stream</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                        <td>Property</td>
+                        <td>Description	DOM</td>
+                        </tr>
+                        <tr>
+                        <td>document.anchors</td>
+                        <td>Returns  all "a" elements that have a name attribute</td>
+                        </tr>
+                        <tr>
+                        <td>document.baseURI</td>
+                        <td>Returns  the absolute base URI of the document	</td>
+                        </tr>
+                        <tr>
+                        <td>document.body</td>
+                        <td>Returns  the "body" element	</td>
+                        </tr>
+                        <tr>
+                        <td>document.cookie</td>
+                        <td>Returns  the document's cookie	</td>
+                        </tr>
+                        <tr>
+                            <td>document.doctype</td>
+                            <td>Returns  the document's doctype	</td>
+                        </tr>
+                        <tr>
+                        <td>document.documentElement</td><td>Returns  the <html> element	</td></tr>
+                        <tr>
+                        <td>document.documentMode</td><td>Returns  the mode used by the browser	</td></tr>
+                        <tr>
+                        <td>document.documentURI</td><td>Returns  the URI of the document	</td></tr>
+                        <tr>
+                        <td>document.domain</td><td>Returns  the domain name of the document server	</td></tr>
+                        <tr>
+                        <td>document.embeds</td>
+                        <td>Returns  all "embed" elements</td>
+                        </tr>
+                        <tr>
+                        <td>document.forms</td>
+                        <td>Returns  all "form" elements</td>
+                        </tr>
+                        <tr>
+                        <td>document.head</td>
+                        <td>Returns  the "head" element	</td>
+                        </tr>
+                        <tr>
+                        <td>document.images</td>
+                        <td>Returns  all "img" elements	</td>
+                        </tr>
+                        <tr>
+                        <td>document.implementation	</td>
+                        <td>Returns  the DOM implementation	</td>
+                        </tr>
+                        <tr>
+                        <td>document.inputEncoding	</td>
+                        <td>Returns  the document's encoding (character set)	</td>
+                        </tr>
+                        <tr>
+                        <td>document.lastModified	</td>
+                        <td>Returns  the date and time the document was updated	</td>
+                        </tr>
+                        <tr>
+                        <td>document.links	</td>
+                        <td>Returns  all "area" and "a" elements that have a href attribute	</td>
+                        </tr>
+                        <tr>
+                        <td>document.readyState	</td>
+                        <td>Returns  the (loading) status of the document	</td>
+                        </tr>
+                        <tr>
+                        <td>document.referrer	</td>
+                        <td>Returns  the URI of the referrer (the linking document)	</td>
+                        </tr>
+                        <tr>
+                        <td>document.scripts</td>
+                        <td>Returns  all "script" elements</td>
+                        <tr>
+                        <td>document.strictErrorChecking	</td>
+                        <td>Returns  if error checking is enforced	</td>
+                        </tr>
+                        <tr>
+                        <td>document.title	</td>
+                        <td>Returns  the "title" element	</td>
+                        </tr>
+                        <tr>
+                        <td>document.URL	</td>
+                        <td>Returns  the complete URL of the document	</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Finding HTML Elements</h4>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>    
+        </table>
+    </body>
+</html>

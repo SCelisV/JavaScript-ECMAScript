@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exercises - JS Test</title>
+
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            * {
+                box-sizing: border-box;
+            }  
+        </style>
+    </head>
+    <body>
+        <h2>JavaScript Test</h2>
+        <p>var x = 5; var y = 5;</p>
+        <hr />
+        <p id="igual"></p>
+        <p id="noigual"></p>
+        <hr />
+        <p id="andvv"></p>
+        <p id="andvf"></p>
+        <p id="andfv"></p>
+        <p id="andff"></p>
+        <hr>        
+        <p id="orvv"></p>
+        <p id="orvf"></p>
+        <p id="orfv"></p>
+        <p id="orff"></p>
+        <br />
+        <input type="hidden" name="SSCC" id="SSCC" value="N"/>
+        <input type="hidden" name="XTI_INICLIE" id="XTI_INICLIE" value="N"/>
+        <input type="hidden" name="CHECK" id="CHECK" value="3"/>
+        <br />
+        <p id="mensaje"></p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" onclick="asigna();"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other"><br><br>
+        <hr>
+        <input type="input" name="AUXHD_CLIEN" id="AUXHD_CLIEN">
+        <!-- <xsl:attribute name="value">
+            <xsl:choose>
+                <xsl:when test="(normalize-space($COD_TIOPERAC) = 'CANJ')">
+                    <xsl:value-of select="normalize-space(SERV_PRESENTACION/XTI_CLIEN)"/>
+                </xsl:when>						
+                <xsl:otherwise>
+                    <xsl:value-of select="normalize-space(SERV_PRESENTACION/XTI_INICLI)"/>
+                </xsl:otherwise>
+            </xsl:choose>					
+        </xsl:attribute> -->
+        </input>
+
+
+
+        
+        <script>
+
+            var x = 5;
+            var y = 5;
+            document.getElementById("igual").innerHTML = "<h4> (x == y) = " + (x == y) + "</h4>";
+            document.getElementById("noigual").innerHTML = "<h4> (x != y) = " + (x != y) + "</h4>";
+
+            document.getElementById("andvv").innerHTML = "<h4>((x == y) && (x == y)) = " + ((x == y) && (x == y)); + "</h4>";
+            document.getElementById("andvf").innerHTML = "<h4>((x == y) && (x != y)) = " + ((x == y) && (x != y)); + "</h4>";
+            document.getElementById("andfv").innerHTML = "<h4>((x != y) && (x == y)) = " + ((x != y) && (x == y)); + "</h4>";
+            document.getElementById("andff").innerHTML = "<h4>((x != y) && (x != y)) = " + ((x != y) && (x != y)); + "</h4>";
+
+            document.getElementById("orvv").innerHTML = "<h4>((x == y) || (x == y)) = " + ((x == y) || (x == y)); + "</h4>";
+            document.getElementById("orvf").innerHTML = "<h4>((x == y) || (x != y)) = " + ((x == y) || (x != y)); + "</h4>";
+            document.getElementById("orfv").innerHTML = "<h4>((x != y) || (x == y)) = " + ((x != y) || (x == y)); + "</h4>";
+            document.getElementById("orff").innerHTML = "<h4>((x != y) || (x != y)) = " + ((x != y) || (x != y)); + "</h4>";
+
+            function asigna(){
+                document.getElementById("AUXHD_CLIEN").value = "M";
+            }
+if(document.getElementById("SSCC").value == "S"){//SSCC
+    document.getElementById("mensaje").innerHTML = document.getElementById("SSCC").value;
+}else{//Oficinas
+    if((document.getElementById("CHECK").value == 3) || ((document.getElementById("XTI_INICLIE").value != "R") && (document.getElementById("XTI_INICLIE").value != "P"))){//Vender todos los derechos y NO sustituir acciones or No MiFID
+        document.getElementById("mensaje").innerHTML = document.getElementById("XTI_INICLIE").value;
+    }else{
+            if((document.getElementById("CHECK").value == 1 || document.getElementById("CHECK").value == 2) || (document.getElementById("CHECK").value == 4 && document.getElementById("susc_acciones").value !='')){//(Comprar ó Vender) ó (Instrucciones especiales y suscribir nuevas acciones informado)
+
+            }
+    }
+    
+}
+
+
+// adhesiones
+
+
+function botonAceptar(){
+
+    // formatearPuntosEnviar();
+
+    if(document.getElementById("SSCC").value == "S"){//SSCC
+        // exeEventAceptar();
+    }else{//Oficinas
+        if(document.getElementById("CHECK").value == 3){//Vender todos los derechos y NO sustituir acciones
+            // exeEventAceptar();
+        }else{
+                if((document.getElementById("CHECK").value == 1 || document.getElementById("CHECK").value == 2) || (document.getElementById("CHECK").value == 4 && document.getElementById("susc_acciones").value !='')){//(Comprar ó Vender) ó (Instrucciones especiales y suscribir nuevas acciones informado)
+
+                }
+        }
+        
+    }
+}//botonAceptar_end
+
+
+/*
+                    if(document.getElementById("HAS_PULSADO").value=="S"){//Pulsado
+                        if(document.getElementById("XSN_ERROR").value=="N"){//No hay error
+                            exeEventAceptar();
+                        }else{//hay error
+                            alert("mensaje error 33");
+                        }
+                    }else{//no pulsado
+                        alert("mensaje error 32");
+                    }
+*/
+
+
+function exeEventAceptar(){
+
+    if (document.forms[0].XTI_MODO.value =='AL'){//Alta
+        if (document.forms[0].PES_ORIGEN.value == 1){//Datos Adhesión
+            if ((document.forms[0].checkV1.checked == true) | (document.forms[0].checkV2.checked == true) | (document.forms[0].checkV3.checked == true)){//Comprar ó Vender ó Vender todos los derechos y NO suscribir acciones.
+                enviar(document.TVNLVE00278,'0X06601010'); //Aceptar
+            } else{//Instrucciones especiales
+                enviar(document.TVNLVE00278,'0X06601000'); //Aceptar Instr esp
+            }
+        }else {//Instrucciones especiales ó Datos adicionales
+                enviar(document.TVNLVE00278,'0X06601000'); //Aceptar Instr esp
+        }
+    }else{//No es AL
+            if (document.forms[0].PES_ORIGEN.value == 1){//Datos Adhesión
+                if (document.forms[0].CHECK.value != 4){//Comprar ó Vender ó Vender todos los derechos y NO suscribir acciones.
+                    enviar(document.TVNLVE00278,'0X06601010');//Aceptar
+                }else{//Instrucciones especiales ó Datos adicionales
+                    enviar(document.TVNLVE00278,'0X06601000');//Aceptar Instr esp
+                }
+            }else enviar(document.TVNLVE00278,'0X06601000'); //Aceptar Instr esp - Instrucciones especiales ó Datos adicionales
+
+    }
+
+    deshabilitarFormularioTemporalValores();
+
+}//exeEventAceptar_end
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>JavaScript - funciones return </title>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+			
+		function Conectar()
+
+		{
+			var IDusuario;
+			var contraseya;
+			var valido
+			IDusuario = prompt('Introduzca el ID de usuario: ' , ' ');
+			contraseya = prompt('Introuduzca la contraseya: ',' ');
+			valido = ValidarConectar(IDusuario,contraseya);
+			switch (valido){
+				case 1:
+					alert('Conexion VAlida');
+					break;
+				case 2:
+					alert('ID de usuario VAlido. Contrasenya INvalida');
+					break;
+				case 3:
+					alert('ID de usuario INvalido. Contrasenya VAlida');
+					break;
+				case 4: 
+					alert('ID de usuario y Contrasenya INvalidas');
+					break;
+
+			} 
+				
+		}
+
+
+		function ValidarConectar(id, pwd){
+			
+			var DevolverValor;
+			if(id == 'Grallapepe' && pwd == 'buceo'){
+				DevolverValor = 1;
+			} else if (id == 'Grallapepe'){
+				DevolverValor = 2;
+			} else if (pwd == 'buceo'){
+				DevolverValor = 3;
+			} else {
+				DevolverValor = 4;
+			}
+			return 	DevolverValor;		
+			
+		}
+		-->
+		</script>
+	</head>
+	 <body>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+
+		Conectar(); 
+
+		-->
+		</script>
+	</body>
+</html>

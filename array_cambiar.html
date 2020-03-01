@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>JavaScript ¡ array_cambiar !</title>
+	</head>
+	 <body>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+			var ListaTareas=new Array();
+			
+			ListaTareas[0]='tarea 0';
+			ListaTareas[1]='tarea 1';
+			ListaTareas[2]='tarea 2';
+			
+			for (i=0; i<ListaTareas.length; i++){
+				document.write('ListaTareas[' +i+ '] ' + ListaTareas[i]);
+				document.write('<br>');
+			}
+	
+			var tarea = ListaTareas.shift();		
+			
+			document.write('ListaTareas.shift()');
+	document.write('<br>');
+
+/* shift elimina y devuelve el primer elemento del array y luego desplaza hacia arriba el resto de las tareas de la lista */			
+
+			for (i=0; i<ListaTareas.length; i++){
+				document.write('ListaTareas[' +i+ '] ' + ListaTareas[i]);
+				document.write('<br>');
+			}			
+/* push situa una nueva tarea al final de su lista de tareas */
+
+			ListaTareas.push('una nueva tarea 2');			
+
+			document.write('ListaTareas.push()');
+			document.write('<br>');
+			for (i=0; i<ListaTareas.length; i++){
+				document.write('ListaTareas[' +i+ '] ' + ListaTareas[i]);
+				document.write('<br>');
+			}
+/* reverse invierte el orden de los valores de la lista de tareas */
+
+			ListaTareas.reverse();			
+
+			document.write('ListaTareas.reverse()');
+			document.write('<br>');
+			for (i=0; i<ListaTareas.length; i++){
+				document.write('ListaTareas[' +i+ '] ' + ListaTareas[i]);
+				document.write('<br>');
+			}
+/* pop devuelve y elimina el último elemento de la lista de tareas */
+
+			ListaTareas.pop();			
+
+			document.write('ListaTareas.pop()');
+			document.write('<br>');
+			for (i=0; i<ListaTareas.length; i++){
+				document.write('ListaTareas[' +i+ '] ' + ListaTareas[i]);
+				document.write('<br>');
+			}
+			
+		-->
+		</script>
+		<noscript>
+			<h1>Se requiere JavaScript</h1>
+		</noscript>
+	</body>
+</html>

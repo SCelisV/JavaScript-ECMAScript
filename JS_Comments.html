@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Comments
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JavaScript Comments
+        </h1>
+
+        <h2>
+            JavaScript comments can be used to explain JavaScript code, and to make it more readable. <br>
+            JavaScript comments can also be used to prevent execution, when testing alternative code. <br>
+        </h2>
+
+        <h2>Single Line Comments</h2>
+        <h3>
+                Single line comments start with //. <br>
+
+                Any text between // and the end of the line will be ignored by JavaScript (will not be executed). <br>
+                
+                This example uses a single-line comment before each code line: <br>
+
+                // Change heading: <br>
+            document.getElementById("myH").innerHTML = "My First Page";  <br>
+                // Change paragraph:  <br>
+            document.getElementById("myP").innerHTML = "My first paragraph."; <br>
+        </h3>
+        <h5><a href="MyEx_JS_Comments_01.html" target="_blank">Example: JS_Comments_01</a></h5>        
+        
+        <h3>
+            This example uses a single line comment at the end of each line to explain the code: <br>
+            
+            var x = 5;      // Declare x, give it the value of 5  <br>
+            var y = x + 2;  // Declare y, give it the value of x + 2 <br>
+        </h3>
+        
+        <h5><a href="MyEx_JS_Comments_02.html" target="_blank">Example: JS_Comments_02</a></h5>        
+        
+        <h2>Multi-line Comments</h2>
+        <h3>
+            Multi-line comments start with /* and end with */. <br>
+            
+            Any text between /* and */ will be ignored by JavaScript. <br>
+            
+            This example uses a multi-line comment (a comment block) to explain the code: <br>
+            
+            /* <br>
+            The code below will change <br>
+            the heading with id = "myH" <br>
+                and the paragraph with id = "myP" <br>
+                in my web page: <br>
+                */  <br>
+                document.getElementById("myH").innerHTML = "My First Page";  <br>
+                document.getElementById("myP").innerHTML = "My first paragraph.";
+        </h3>
+        
+        <h5><a href="MyEx_JS_Comments_03.html" target="_blank">Example: JS_Comments_03</a></h5>        
+        
+        <h2>Using Comments to Prevent Execution</h2>
+        
+        <h3>
+            Using comments to prevent execution of code is suitable for code testing. <br>
+            
+            Adding // in front of a code line changes the code lines from an executable line to a comment. <br>
+            
+            This example uses // to prevent execution of one of the code lines: <br>
+            
+            //document.getElementById("myH").innerHTML = "My First Page"; <br>
+            document.getElementById("myP").innerHTML = "My first paragraph."; <br>
+        </h3>
+
+        <h5><a href="MyEx_JS_Comments_04.html" target="_blank">Example: JS_Comments_04</a></h5>        
+        
+        <h3>
+            This example uses a comment block to prevent execution of multiple lines: <br>
+            
+            /* <br>
+            document.getElementById("myH").innerHTML = "My First Page";  <br>
+            document.getElementById("myP").innerHTML = "My first paragraph.";  <br>
+            */ <br>
+            
+        </h3>
+        <h5><a href="MyEx_JS_Comments_05.html" target="_blank">Example: JS_Comments_05</a></h5>        
+
+
+
+
+
+
+
+    </body>
+</html>
+

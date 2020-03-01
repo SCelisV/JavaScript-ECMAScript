@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title> JavaScript - formulario manipular obj's onSubmit- </title>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		function EstablecerEmail(){
+			
+			with(window.document.forms.Contacto){
+				if (Nombre.value.length>0 && Apellidos.value.length>0){
+					eMail.value = Nombre.value.charAt(0) + Apellidos.value + '@miempresa.com'
+				}
+			}
+		}
+		-->
+		</script>
+
+	</head>
+	 <body>
+		<form name="Contacto" action="" method="post">
+			<p>
+				Nombre: <input type="text" name="Nombre" />
+				<br/>
+				Apellidos: <input type="text" name="Apellidos" />
+				<br/>
+				eMail: <input type="text" name="eMail" />
+				<br/>
+				<input type="submit" name="Submit" value="Enviar" onClick="EstablecerEmail()" />
+				<br/>
+				<input type="reset" name="Reestablecer" value="Reestablecer" />
+			</p>
+		</form>
+	</body>
+</html>

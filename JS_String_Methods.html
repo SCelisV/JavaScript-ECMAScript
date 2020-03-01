@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript String Methods
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JavaScript String Methods
+        </h1>
+        <h3>String methods help you to work with strings.</h3>
+        <h2>String Methods and Properties</h2>
+        <h3>
+            Primitive values, like "John Doe", cannot have properties or methods (because they are not objects). <br>
+
+            But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties. <br>
+        </h3>
+        <h2>String Length</h2>
+        <h3>
+            The length property returns the length of a string: <br>
+            var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; <br>
+            var sln = txt.length;
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_01.html" target="_blank">Excercise: JS_String_Methods_01</a></h5>
+        <h2>Finding a String in a String</h2>
+        <h3>
+            The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string: <br>
+            var str = "Please locate where 'locate' occurs!"; <br>
+            var pos = str.indexOf("locate"); <br>
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_02.html" target="_blank">Excercise: JS_String_Methods_02</a></h5>
+        <h2>The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:</h2>
+        <h3>
+            var str = "Please locate where 'locate' occurs!"; <br>
+            var pos = str.lastIndexOf("locate"); <br>
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_03.html" target="_blank">Excercise: JS_String_Methods_03</a></h5>
+        
+        <h2>The two methods, indexOf() and search(), are equal?</h2>
+        <h3>They accept the same arguments (parameters), and return the same value?</h3>
+        <h2>The two methods are NOT equal. These are the differences:</h2>
+        <h3>The search() method cannot take a second start position argument.<br>
+            The indexOf() method cannot take powerful search values (regular expressions).</h3>
+        <h2>Extracting String Parts</h2>
+        <h3>There are 3 methods for extracting a part of a string: <br>
+
+            - slice(start, end) <br>
+            - substring(start, end) <br>
+            - substr(start, length) <br>
+                
+        </h3>
+        <h2>The slice() Method</h2>
+        <h3>
+            slice() extracts a part of a string and returns the extracted part in a new string. <br>
+
+            The method takes 2 parameters: the starting index (position), and the ending index (position). <br>
+                
+            This example slices out a portion of a string from position 7 to position 13: <br>
+                
+            var str = "Apple, Banana, Kiwi"; <br>
+            var res = str.slice(7, 13);
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_04.html" target="_blank">Excercise: JS_String_Methods_04</a></h5>
+        <h3>
+            If a parameter is negative, the position is counted from the end of the string. <br>
+
+            This example slices out a portion of a string from position -12 to position -6: <br>
+            
+            var str = "Apple, Banana, Kiwi"; <br>
+            var res = str.slice(-12, -6);
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_05.html" target="_blank">Excercise: JS_String_Methods_05</a></h5>
+        <h3>If you omit the second parameter, the method will slice out the rest of the string: <br>
+            var res = str.slice(7);
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_06.html" target="_blank">Excercise: JS_String_Methods_06</a></h5>
+        <h3>or, counting from the end: <br>
+            var res = str.slice(-12);
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_07.html" target="_blank">Excercise: JS_String_Methods_07</a></h5>
+        <h2>The substring() Method</h2>
+        <h3>
+            substring() is similar to slice(). <br>
+            
+            The difference is that substring() cannot accept negative indexes. <br>
+            
+            var str = "Apple, Banana, Kiwi"; <br>
+            var res = str.substring(7, 13);
+        </h3>
+        <h3>If you omit the second parameter, substring() will slice out the rest of the string.</h3>
+        <h5><a href="MyEx_JS_String_Methods_08.html" target="_blank">Excercise: JS_String_Methods_08</a></h5>
+        <h2>substr() is similar to slice().</h2>
+        <h3>The difference is that the second parameter specifies the length of the extracted part. <br>
+            
+            var str = "Apple, Banana, Kiwi"; <br>
+            var res = str.substr(7, 6);
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_09.html" target="_blank">Excercise: JS_String_Methods_09</a></h5>
+        <h3>If the first parameter is negative, the position counts from the end of the string. <br>
+            
+            The second parameter can not be negative, because it defines the length. <br>
+            
+            If you omit the second parameter, substr() will slice out the rest of the string.</h3>
+        <h2>Replacing String Content</h2>
+        <h3>
+            The replace() method replaces a specified value with another value in a string: <br>
+            
+            str = "Please visit Microsoft!"; <br>
+            var n = str.replace("Microsoft", "W3Schools");
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_10.html" target="_blank">Excercise: JS_String_Methods_10</a></h5>
+        <h3>The replace() method does not change the string it is called on. It returns a new string.</h3>
+        <h3>By default, the replace() function replaces only the first match: <br>
+            
+            str = "Please visit Microsoft and Microsoft!"; <br>
+            var n = str.replace("Microsoft", "W3Schools");</h3>
+        <h5><a href="MyEx_JS_String_Methods_11.html" target="_blank">Excercise: JS_String_Methods_11</a></h5>
+        <h3>By default, the replace() function is case sensitive.  <br>
+            Writing MICROSOFT (with upper-case) will not work: <br>
+
+        str = "Please visit Microsoft!"; <br>
+        var n = str.replace("MICROSOFT", "W3Schools");</h3>
+        <h5><a href="MyEx_JS_String_Methods_12.html" target="_blank">Excercise: JS_String_Methods_12</a></h5>
+        <h3>To replace case insensitive, use a regular expression with an /i flag (insensitive): <br>
+            
+            str = "Please visit Microsoft!"; <br>
+            var n = str.replace(/MICROSOFT/i, "W3Schools"); <br>
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_13.html" target="_blank">Excercise: JS_String_Methods_13</a></h5>
+        <h3>
+            To replace all matches, use a regular expression with a /g flag (global match): <br>
+
+            str = "Please visit Microsoft and Microsoft!"; <br>
+            var n = str.replace(/Microsoft/g, "W3Schools"); <br>
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_14.html" target="_blank">Excercise: JS_String_Methods_14</a></h5>
+        <h2>Converting to Upper Case</h2>
+        <h3>
+            A string is converted to upper case with toUpperCase(): <br>
+            
+            var text1 = "Hello World!";       // String <br>
+            var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_15.html" target="_blank">Excercise: JS_String_Methods_15</a></h5>
+        <h2>Converting to Lower Case</h2>
+        <h3>
+            A string is converted to lower case with toLowerCase(): <br>
+
+            var text1 = "Hello World!";       // String <br>
+            var text2 = text1.toLowerCase();  // text2 is text1 converted to lower <br>
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_16.html" target="_blank">Excercise: JS_String_Methods_16</a></h5>
+        <h2>The concat() Method</h2>
+        <h3>
+            concat() joins two or more strings: <br>
+            
+            var text1 = "Hello"; <br>
+            var text2 = "World"; <br>
+            var text3 = text1.concat(" ", text2); <br>
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_17.html" target="_blank">Excercise: JS_String_Methods_17</a></h5>
+        <h2>The concat() method can be used instead of the plus operator. These two lines do the same:</h2>
+        <h3>
+            var text = "Hello" + " " + "World!"; <br>
+            var text = "Hello".concat(" ", "World!"); <br>
+            All string methods return a new string. They don't modify the original string. <br>
+            Formally said: Strings are immutable: Strings cannot be changed, only replaced.
+        </h3>
+        <h2>Extracting String Characters</h2>
+        <h3>
+            There are 2 safe methods for extracting string characters: <br>
+            
+            - charAt(position) <br>
+            - charCodeAt(position) <br>
+        </h3>
+        <h2>The charAt() Method</h2>
+        <h3>
+            The charAt() method returns the character at a specified index (position) in a string: <br>
+            
+            var str = "HELLO WORLD"; <br>
+            str.charAt(0);            // returns H <br>
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_18.html" target="_blank">Excercise: JS_String_Methods_18</a></h5>
+        <h2>The charCodeAt() Method</h2>
+        <h3>The charCodeAt() method returns the unicode of the character at a specified index in a string:
+            
+            var str = "HELLO WORLD"; <br>
+            
+            str.charCodeAt(0);         // returns 72 <br>
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_19.html" target="_blank">Excercise: JS_String_Methods_19</a></h5>
+        <h2>Accessing a String as an Array is Unsafe</h2>
+        <h3>You might have seen code like this, accessing a string as an array:
+            var str = "HELLO WORLD"; <br>
+
+            str[0];                   // returns H <br>
+            This is unsafe and unpredictable: <br>
+
+            It does not work in all browsers (not in IE5, IE6, IE7) <br>
+            It makes strings look like arrays (but they are not) <br>
+            str[0] = "H" does not give an error (but does not work) <br>
+            If you want to read a string as an array, convert it to an array first. <br>
+        </h3>
+        <h2>Converting a String to an Array</h2>
+        <h3>A string can be converted to an array with the split() method: <br>
+
+            var txt = "a,b,c,d,e";   // String <br>
+            txt.split(",");          // Split on commas <br>
+            txt.split(" ");          // Split on spaces <br>
+            txt.split("|");          // Split on pipe</h3>
+        <h5><a href="MyEx_JS_String_Methods_20.html" target="_blank">Excercise: JS_String_Methods_20</a></h5>
+        <h3>If the separator is omitted, the returned array will contain the whole string in index [0]. <br>
+
+            If the separator is "", the returned array will be an array of single characters: <br>
+                
+            var txt = "Hello";       // String <br>
+            txt.split("");           // Split in characters
+        </h3>
+        <h5><a href="MyEx_JS_String_Methods_21.html" target="_blank">Excercise: JS_String_Methods_21</a></h5>
+        <h3>Display the position of the first occurrence of "World" in the variable txt.</h3>
+        <h5><a href="MyEx_JS_String_Methods_22.html" target="_blank">Excercise: JS_String_Methods_22</a></h5>
+        <h3>Use the slice() method to display only "Banana,Kiwi".</h3>
+        <h5><a href="MyEx_JS_String_Methods_23.html" target="_blank">Excercise: JS_String_Methods_23</a></h5>
+        <h3>Use the replace() method to replace "World" with "Universe".</h3>
+        <h5><a href="MyEx_JS_String_Methods_24.html" target="_blank">Excercise: JS_String_Methods_24</a></h5>
+        <h3>Convert the value of txt to upper case.</h3>
+        <h5><a href="MyEx_JS_String_Methods_25.html" target="_blank">Excercise: JS_String_Methods_25</a></h5>
+        <h3>Convert the value of txt to lower case.</h3>
+        <h5><a href="MyEx_JS_String_Methods_26.html" target="_blank">Excercise: JS_String_Methods_26</a></h5>
+        <h3>Use the concat() method to join the two strings: str1 and str2.</h3>
+        <h5><a href="MyEx_JS_String_Methods_27.html" target="_blank">Excercise: JS_String_Methods_27</a></h5>
+    </body>
+</html>

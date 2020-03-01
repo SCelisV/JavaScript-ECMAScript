@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Where To
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>
+            JavaScript Where To
+        </h1>
+        <h2>The &lt;script&gt; Tag</h2>
+        <h3>In HTML, JavaScript code must be inserted between &lt;script&gt; and &lt;/script&gt; tags.</h3>
+
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = "My First JavaScript";
+        </script>
+
+        <h2>
+            JavaScript Functions and Events
+        </h2>
+        <h3>a function can be called when an event occurs, like when the user clicks a button.</h3>
+
+        <h2>JavaScript in &lt;head&gt; or &lt;body&gt;</body></h2>
+        <h3>Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both.</h3>
+
+        <h2>JavaScript in &lt;head&gt;</head></h2>
+        <h3>JavaScript function is placed in the &lt;head&gt; section of an HTML page. <br>
+            The function is invoked (called) when a button is clicked:</h3>
+
+        <h5>
+            <a href="MyEx_JS_in_head_01.html" target=_blank>Example_JS_in_head_01</a>
+        </h5>
+
+        <h2>
+            JavaScript in &lt;body&gt;
+        </h2>
+        <h3>JavaScript function is placed in the &lt;body&gt; section of an HTML page. <br>
+
+                The function is invoked (called) when a button is clicked</h3>
+
+        <h5>
+            <a href="MyEx_JS_in_body_01.html" target="_blank">Example_JS_in body_01</a>
+        </h5>
+
+        <h2>External JavaScript</h2>
+        <h3>Scripts can also be placed in external files:
+            External scripts are practical when the same code is used in many different web pages. <br>
+            To use an external script, put the name of the script file in the src (source) attribute of a &lt;script&gt; tag:
+        </h3>
+        <h5>
+            <a href="MyEx_JS_External_file_01.html" target="_blank">Example_JS:External_file_01</a>
+        </h5>
+
+        <h2>External JavaScript Advantages</h2>
+
+        <h3>
+            It separates HTML and code <br>
+            It makes HTML and JavaScript easier to read and maintain <br>
+            Cached JavaScript files can speed up page loads <br>
+            To add several script files to one page  - use several script tags:<br>
+        
+        </h3>
+        <h5>
+            <script src="myScript1.js"></script> <br>
+            <script src="myScript2.js"></script> <br>
+        </h5>
+
+        <h2>External References</h2>
+        <h3>External scripts can be referenced with a full URL or with a path relative to the current web page.</h3>
+
+        <h3>This example uses a full URL to link to a script: src="https://www.w3schools.com/js/myScript.js"</h3>
+
+        <h5><a href="MyEx_JS_External_file_02.html" target="_blank">Example_JS:External_file_02</a></h5>
+
+        <h3>This example uses a script located in a specified folder on the current web site: src="./js/myScript1.js"</h3>
+
+        <h5><a href="MyEx_JS_External_file_03.html" target="_blank">Example_JS:External_file_03</a></h5>
+
+        <h3>This example links to a script located in the same folder as the current page:</h3>
+
+        <h5><a href="MyEx_JS_External_file_04.html" target="_blank">Example_JS:External_file_04</a></h5>
+
+
+    </body>
+</html>
+

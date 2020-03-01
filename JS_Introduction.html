@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Introduction
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>
+            JavaScript Introduction
+        </h1>
+
+        <h2>JavaScript Can Change HTML Content</h2>
+
+        <h3>getElementById()</h3>
+
+        <h5>define el parragraph: &lt;p id="demo"&gt;</h5>
+
+        <h5>document.getElementById("demo").innerHTML</h5>
+
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+        <h4>JavaScript accepts both double and single quotes:</h4>
+
+        <p id="demo1">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick="document.getElementById('demo1').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+        <h2>JavaScript Can Change HTML Attributes</h2>
+
+        <h3>changes the src (source) attribute of an image</h3>
+
+        <h5>definir la imagen: &lt;img id="myImage" src="./images/pic_bulboff.gif" style="width:100px"&gt;</h5>
+
+        <h5>cambiar el attribute: document.getElementById('myImage').src</h5>
+
+        <button onclick="document.getElementById('myImage').src='./images/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="./images/pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='./images/pic_bulboff.gif'">Turn off the light</button>
+
+        <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+
+        <h5>definir el parragraph: &lt;p id="demo"&gt;</h5>
+        
+        <h5>cambiar el attribute: document.getElementById('demo2').style.fontSize</h5>
+
+        <p id="demo2">JavaScript can change the style of an HTML element.</p>
+
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+
+        <h2>JavaScript Can Hide HTML Elements</h2>
+
+        <h5>definir el paragraph: &lt;p id="demo3"&gt;</h5>
+
+        <h5>cambiar el attribute: document.getElementById('demo3').style.display='none'</h5>
+
+        <p id="demo3">JavaScript can hide HTML elements.</p>
+
+        <button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
+
+        <h2>JavaScript Can Show HTML Elements</h2>
+
+        <h5>definir el paragraph: &lt;p id="demo4"&gt;</h5>
+
+        <h5>cambiar el attribute: document.getElementById('demo4').style.display='block'</h5>
+
+        <p id="demo4" style="display:none">Hello JavaScript!</p>
+
+        <button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me!</button>
+
+        
+
+    </body>
+</html>
+

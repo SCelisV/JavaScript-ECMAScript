@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exercises - JS Number Methods and Properties</title>
+
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            * {
+                box-sizing: border-box;
+            }  
+        </style>
+    </head>
+    <body>
+
+        <h2>JavaScript Number Methods and Properties</h2>
+
+        <p>The global JavaScript function parseInt() converts strings to numbers:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = 
+            " parseInt('10'):  " + parseInt('10') + "<br>" +
+            " parseInt('10.33'):  " +parseInt('10.33') + "<br>" +
+            " parseInt('10 6'):  " + parseInt('10 6') + "<br>" +    
+            " parseInt('10 20 30'):  " + parseInt('10 20 30') + "<br>" +
+            " parseInt('10 years'):  " +    parseInt('10 years') + "<br>" +    
+            " parseInt('years 10'):  " +    parseInt('years 10');   
+        </script>
+
+    </body>
+</html>

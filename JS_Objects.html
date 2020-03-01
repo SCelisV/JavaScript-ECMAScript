@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Objects
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JavaScript Objects
+        </h1>
+        <h2>Real Life Objects, Properties, and Methods</h2>
+        <h3>
+            In real life, a car is an object.
+
+            A car has properties like weight and color, and methods like start and stop:
+        </h3>
+        <h4>
+            <table>
+                <tr>
+                <th style="width:370px">
+                Object
+                </th>
+                <th>
+                Properties
+                </th>
+                <th>
+                Methods
+                </th>
+                </tr>
+                <tr>
+                <td>
+                <img src="./images/objectExplained.gif" style="width:368px;height:230px;">
+                </td>
+                <td>
+                <br>car.name = Fiat<br><br>
+                car.model = 500<br><br>
+                car.weight = 850kg<br><br>
+                car.color = white
+                </td>
+                <td>
+                <br>car.start()<br><br>
+                car.drive()<br><br>
+                car.brake()
+                <br><br>car.stop()</td>
+                </tr>
+            </table>
+        </h4>
+        <h3>
+            All cars have the same properties, but the property values differ from car to car. <br>
+
+            All cars have the same methods, but the methods are performed at different times.
+        </h3>
+        <h2>JavaScript Objects</h2>
+        <h3>
+            You have already learned that JavaScript variables are containers for data values. <br>
+
+            This code assigns a simple value (Fiat) to a variable named car: <br>
+            
+            var car = "Fiat"; <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Objects_01.html" target="_blank">Example: JS_Objects_01</a>
+        </h5>
+        <h3>
+            Objects are variables too. But objects can contain many values. <br>
+            
+            This code assigns many values (Fiat, 500, white) to a variable named car: <br>
+            
+            var car = {type:"Fiat", model:"500", color:"white"}; <br>
+
+            The values are written as name:value pairs (name and value separated by a colon). <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Objects_02.html" target="_blank">Example: JS_Objects_02</a>
+        </h5>
+        <h2>Object Properties</h2>
+        <h3>
+            The name:values pairs (in JavaScript objects) are called properties. <br>
+
+            var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+            <table>
+                <tr>
+                    <th >Property</th>
+                    <th>Property Value</th>
+                </tr>
+                <tr>
+                    <td>firstName</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>lastName</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>eyeColor</td>
+                    <td>blue</td>
+                </tr>
+            </table>
+        </h3>
+        <h2>Object Methods</h2>
+        <h3>
+            Methods are actions that can be performed on objects. <br>
+
+            Methods are stored in properties as function definitions. <br>
+
+            <table>
+                <tr>
+                    <th>Property</th>
+                    <th>Property Value</th>
+                </tr>
+                <tr>
+                    <td>firstName</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>lastName</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>eyeColor</td>
+                    <td>blue</td>
+                </tr>
+                <tr>
+                    <td>fullName</td>
+                    <td>function() {return this.firstName + &quot; &quot; + this.lastName;}</td>
+                </tr>
+            </table>
+        </h3>
+        <h2>Object Definition</h2>
+        <h3>
+            You define (and create) a JavaScript object with an object literal: <br>
+            
+            var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Objects_03.html" target="_blank">Example: JS_Objects_03</a>
+        </h5>
+        <h3>
+            Spaces and line breaks are not important. An object definition can span multiple lines: <br>
+            
+            var person = { <br>
+                firstName:"John", <br>
+                lastName:"Doe", <br>
+                age:50, <br>
+                eyeColor:"blue" <br>
+            }; <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Objects_04.html" target="_blank">Example: JS_Objects_04</a>
+        </h5>
+        <h2>Accessing Object Properties</h2>
+        <h3>
+            You can access object properties in two ways: <br>
+            
+            objectName.propertyName or objectName["propertyName"] <br>
+            
+            person.lastName; ór person["lastName"];
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Objects_05.html" target="_blank">Example: JS_Objects_05</a>
+        </h5>
+        <h2>Accessing Object Methods</h2>
+        <h3>
+            You access an object method with the following syntax: <br>
+            
+            objectName.methodName() <br>
+            
+            name = person.fullName(); <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Objects_06.html" target="_blank">Example: JS_Objects_06</a>
+        </h5>
+		<h3>
+			If you access a method without (), it will return the function definition: <br>
+			
+			name = person.fullName;
+		</h3>
+		<h5>
+            <a href="MyEx_JS_Objects_07.html" target="_blank">Example: JS_Objects_07</a>
+        </h5>
+		<h2>Do Not Declare Strings, Numbers, and Booleans as Objects!</h2>
+		<h3>
+			When a JavaScript variable is declared with the keyword "new", the variable is created as an object: <br>
+						
+			var x = new String();        // Declares x as a String object <br>
+			var y = new Number();        // Declares y as a Number object <br>
+			var z = new Boolean();       // Declares z as a Boolean object <br>
+
+			Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed. <br>
+		</h3>
+
+        </body>
+    </html>
+    
+    

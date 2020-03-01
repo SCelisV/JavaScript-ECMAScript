@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Exercises - JS Events</title>
+
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            * {
+                box-sizing: border-box;
+            }  
+        </style>
+    </head>
+    <body>
+        <button onclick="myFunction()">Click Me</button>
+
+        <p id="demo"></p> 
+        
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Hello World";
+            }
+        </script>
+    </body>
+</html>

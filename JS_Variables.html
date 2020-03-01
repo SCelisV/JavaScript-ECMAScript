@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Variables
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JavaScript Variables
+        </h1>
+
+        <h2>
+            JavaScript variables are containers for storing data values. <br>
+            In this example, x, y, and z, are variables: <br>
+            var x = 5; - x stores the value 5 <br>
+            var y = 6; - y stores the value 6<br>
+            var z = x + y; - z stores the value 11<br>
+
+        </h2>
+
+        <h5>
+            <a href="MyEx_JS_Variables_01.html" target="_blank">Example: JS_Variables_01</a>
+        </h5>
+        
+        <h2>Much Like Algebra</h2>
+        
+        <h3>In this example, price1, price2, and total, are variables: <br>
+            var price1 = 5; <br>
+            var price2 = 6; <br>
+            var total = price1 + price2; <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Variables_02.html" target="_blank">Example: JS_Variables_02</a>
+        </h5>
+        
+        <h2>JavaScript Identifiers</h2>
+        <h3>
+            All JavaScript variables must be identified with unique names. <br>
+            These unique names are called identifiers. <br>
+
+            Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume). <br>
+            
+            The general rules for constructing names for variables (unique identifiers) are: <br>
+
+            - Names can contain letters, digits, underscores, and dollar signs. <br>
+            - Names must begin with a letter <br>
+            - Names can also begin with $ and _ (but we will not use it in this tutorial) <br>
+            - Names are case sensitive (y and Y are different variables) <br>
+            - Reserved words (like JavaScript keywords) cannot be used as names <br>
+
+        </h3>
+        
+        <h2>The Assignment Operator</h2>
+        <h3>
+            In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator. <br>
+
+            This is different from algebra. The following does not make sense in algebra: <br>
+            
+            x = x + 5 <br>
+            In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x. <br>
+            
+            (It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.) <br>
+            
+            The "equal to" operator is written like == in JavaScript. <br>
+        </h3>
+
+        <h2>JavaScript Data Types</h2>
+        <h3>
+            JavaScript variables can hold numbers like 100 and text values like "John Doe". <br>
+            
+            In programming, text values are called text strings. <br>
+            
+            JavaScript can handle many types of data, but for now, just think of numbers and strings. <br>
+            
+            Strings are written inside double or single quotes. Numbers are written without quotes. <br>
+            
+            If you put a number in quotes, it will be treated as a text string. <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Variables_03.html" target="_blank">Example: JS_Variables_03</a>
+        </h5>
+    
+        <h2>Declaring (Creating) JavaScript Variables</h2>
+        <h3>
+            Creating a variable in JavaScript is called "declaring" a variable. <br>
+            
+            You declare a JavaScript variable with the var keyword: <br>
+            
+            var carName; <br>
+            After the declaration, the variable has no value. (Technically it has the value of undefined) <br>
+            
+            To assign a value to the variable, use the equal sign: <br>
+            
+            carName = "Volvo"; <br>
+            
+            You can also assign a value to the variable when you declare it: <br>
+            
+            var carName = "Volvo"; <br>
+            In the example below, we create a variable called carName and assign the value "Volvo" to it. <br>
+            
+            Then we "output" the value inside an HTML paragraph with id="demo": <br>            
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Variables_04.html" target="_blank">Example: JS_Variables_04</a>
+        </h5>
+        
+        <h2>One Statement, Many Variables</h2>
+        <h3>
+            You can declare many variables in one statement. <br>
+            
+            Start the statement with var and separate the variables by comma: <br>
+            
+            var person = "John Doe", carName = "Volvo", price = 200; <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Variables_05.html" target="_blank">Example: JS_Variables_05</a>
+        </h5>
+        
+        <h2>Value = undefined</h2>
+        <h3>
+            In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input. <br>
+            
+            A variable declared without a value will have the value undefined. <br>
+            
+            The variable carName will have the value undefined after the execution of this statement: <br>
+
+            var carName; <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Variables_06.html" target="_blank">Example: JS_Variables_06</a>
+        </h5>
+    
+        <h2>Re-Declaring JavaScript Variables</h2>
+        <h3>
+            If you re-declare a JavaScript variable, it will not lose its value. <br>
+
+            The variable carName will still have the value "Volvo" after the execution of these statements: <br>
+            
+            var carName = "Volvo"; <br>
+            var carName; <br>            
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Variables_07.html" target="_blank">Example: JS_Variables_07</a>
+        </h5>
+    
+        <h2>JavaScript Arithmetic</h2>
+        <h3>
+            As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +: <br>
+            var x = 5 + 2 + 3; <br>
+            
+            You can also add strings, but strings will be concatenated: <br>
+            var x = "John" + " " + "Doe"; <br>
+
+            Also try this: <br>
+            var x = "5" + 2 + 3; <br>
+
+            If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated. <br>
+            
+            Now try this: <br>
+            var x = 2 + 3 + "5"; <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Variables_08.html" target="_blank">Example: JS_Variables_08</a>
+        </h5>
+    
+
+
+    </body>
+    </html>
+    
+    

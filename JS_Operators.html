@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            JavaScript Operators
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JavaScript Operators
+        </h1>
+        <h3>
+            var x = 5;         // assign the value 5 to x <br>
+            var y = 2;         // assign the value 2 to y <br>
+            var z = x + y;     // assign the value 7 to z (x + y) <br>
+        </h3>
+        <h5>
+            <a href="MyEx_JS_Operators_01.html" target="_blank">Example: JS_Operators_01</a>
+        </h5>
+        <h2>
+            The assignment operator (=) assigns a value to a variable. <br>
+            The = Operator
+        </h2>
+        <h3>
+            var x = 10; <br>
+        </h3>
+        <h4>
+            <p id="demo"></p>
+            
+            <script>
+                var x = 10;
+                document.getElementById("demo").innerHTML = x;
+            </script>
+        </h4>
+        <h2>
+                The addition operator (+) adds numbers: <br>
+                
+                The + Operator - Adding 
+        </h2>
+
+        <h3>
+            var x = 5; <br>
+            var y = 2; <br>
+            var z = x + y;
+        </h3>
+        <h4>
+            <p id="demo2"></p>
+            
+            <script>
+                var x = 5;
+                var y = 2;
+                var z = x + y;
+                document.getElementById("demo2").innerHTML = z;
+            </script>
+        </h4>
+        <h2>The multiplication operator (*) multiplies numbers. <br>
+            Multiplying - The * Operator            
+        </h2>
+
+        <h3>
+            var x = 5; <br>
+            var y = 2; <br>
+            var z = x * y; 
+        </h3>
+        <h4>
+            <p id="demo3"></p>
+
+            <script>
+                var x = 5;
+                var y = 2;
+                var z = x * y;
+                document.getElementById("demo3").innerHTML = z;
+            </script>
+        </h4>
+
+        <h2>The division operator (/) numbers. <br>
+            Division - The / Operator            
+        </h2>
+
+        <h3>
+            var x = 5; <br>
+            var y = 2; <br>
+            var z = x / y; 
+        </h3>
+        <h4>
+            <p id="demo4"></p>
+
+            <script>
+                var x = 5;
+                var y = 2;
+                var z = x / y;
+                document.getElementById("demo4").innerHTML = z;
+            </script>
+        </h4>
+        <h2>The Moduls operator (%) numbers. <br>
+            Modulus (Remainder) - The % Operator            
+        </h2>
+
+        <h3>
+            var x = 5; <br>
+            var y = 2; <br>
+            var z = x % y; 
+        </h3>
+        <h4>
+            <p id="demo5"></p>
+
+            <script>
+                var x = 5;
+                var y = 2;
+                var z = x % y;
+                document.getElementById("demo5").innerHTML = z;
+            </script>
+        </h4>
+        <h2>The Increment operator (++). <br>
+            Increment - The ++ Operator            
+        </h2>
+
+        <h3>
+            var x = 5; <br>
+            var y = 2; <br>
+        </h3>
+        <h4>
+            <p id="demo6"></p>
+
+            <script>
+                var x = 5;
+                x++;
+                var y = 2;
+                ++y;
+                document.getElementById("demo6").innerHTML = x + "" + y; 
+            </script>
+        </h4>
+        <h2>The Decrement operator (--). <br>
+            Decrement - The -- Operator            
+        </h2>
+
+        <h3>
+            var x = 5; <br>
+            var y = 2; <br>
+        </h3>
+        <h4>
+            <p id="demo7"></p>
+
+            <script>
+                var x = 5;
+                x--;
+                var y = 2;
+                --y;
+                document.getElementById("demo7").innerHTML = x + "" + y; 
+            </script>
+        </h4>
+        <h2>JavaScript Assignment Operators</h2>
+        <h3>Assignment operators assign values to JavaScript variables.
+        
+        <table>
+            <tr>
+            <th style="width:25%">Operator</th>
+            <th>Example</th>
+            <th>Same As</th>
+            </tr>
+            <tr>
+            <td>=</td>
+            <td>x = y</td>
+            <td>x = y</td>
+            </tr>
+            <tr>
+            <td>+=</td>
+            <td>x += y</td>
+            <td>x = x + y</td>
+            </tr>
+            <tr>
+            <td>-=</td>
+            <td>x -= y</td>
+            <td>x = x - y</td>
+            </tr>
+            <tr>
+            <td>*=</td>
+            <td>x *= y</td>
+            <td>x = x * y</td>
+            </tr>
+            <tr>
+            <td>/=</td>
+            <td>x /= y</td>
+            <td>x = x / y</td>
+            </tr>
+            <tr>
+            <td>%=</td>
+            <td>x %= y</td>
+            <td>x = x % y</td>
+            </tr>
+        </table>
+         
+        </h3>
+
+        <h2>
+            The addition assignment operator (+=) adds a value to a variable. <br>
+            Assignment
+        </h2>
+        <h3>
+            var x = 10; <br>
+            x += 5; <br>
+        </h3>
+        <h4>
+            <p id="demo8"></p>
+
+            <script>
+                var x = 10;
+                x += 5;
+                document.getElementById("demo8").innerHTML = x;
+            </script>
+        </h4>
+
+        <h2>JavaScript String Operators</h2>
+        <h3>
+            The + operator can also be used to add (concatenate) strings. <br>
+            txt1 = "John"; <br>
+            txt2 = "Doe"; <br>
+            txt3 = txt1 + " " + txt2; <br>
+        </h3>
+        <h2>JavaScript Operators</h2>
+        <h4>
+            <p>The + operator concatenates (adds) strings.</p>
+            
+            <p id="demo9"></p>
+            
+            <script>
+                var txt1 = "John";
+                var txt2 = "Doe";
+                document.getElementById("demo9").innerHTML = txt1 + " " + txt2;
+            </script>
+        </h4>
+        <h3>
+            The += assignment operator can also be used to add (concatenate) strings: <br>
+
+            txt1 = "What a very "; <br>
+            txt1 += "nice day"; <br>
+        </h3>
+
+        <h2>JavaScript Operators</h2>
+
+        <h4>
+            <p>The assignment operator += can concatenate strings.</p>
+
+            <p id="demo10"></p>
+
+            <script>
+                txt1 = "What a very ";
+                txt1 += "nice day";
+                document.getElementById("demo10").innerHTML = txt1;
+            </script>
+        </h4>
+
+        <h2>Adding Strings and Numbers</h2>
+        <h3>
+            Adding two numbers, will return the sum, but adding a number and a string will return a string: <br>
+            x = 5 + 5; <br>
+            y = "5" + 5; <br>
+            z = "Hello" + 5; <br>
+        </h3>
+        <h2>JavaScript Operators</h2>
+        <h4>
+            <p>Adding a number and a string, returns a string.</p>
+
+            <p id="demo11"></p>
+            
+            <script>
+                var x = 5 + 5;
+                var y = "5" + 5;
+                var z = "Hello" + 5;
+                document.getElementById("demo11").innerHTML =
+                x + "<br>" + y + "<br>" + z;
+            </script>
+        </h4>
+
+        <h2>JavaScript Comparison Operators</h2>
+        <h3>
+            <table >
+                <tr>
+                <th >Operator</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                <td>==</td>
+                <td>equal to</td>
+                </tr>
+                <tr>
+                <td>===</td>
+                <td>equal value and equal type</td>
+                </tr>
+                <tr>
+                <td>!=</td>
+                <td>not equal</td>
+                </tr>
+                <tr>
+                <td>!==</td>
+                <td>not equal value or not equal type</td>
+                </tr>
+                <tr>
+                <td>&gt;</td>
+                <td>greater than</td>
+                </tr>
+                <tr>
+                <td>&lt;</td>
+                <td>less than</td>
+                </tr>
+                <tr>
+                <td>&gt;=</td>
+                <td>greater than or equal to</td>
+                </tr>
+                <tr>
+                <td>&lt;=</td>
+                <td>less than or equal to</td>
+                </tr>
+                <tr>
+                <td>?</td>
+                <td>ternary operator</td>
+                </tr>
+            </table>
+        </h3>
+        <h2>JavaScript Logical Operators</h2>
+        <h3>
+            <table>
+                <tr>
+                <th >Operator</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                <td>&amp;&amp;</td>
+                <td>logical and</td>
+                </tr>
+                <tr>
+                <td>||</td>
+                <td>logical or</td>
+                </tr>
+                <tr>
+                <td>!</td>
+                <td>logical not</td>
+                </tr>
+            </table>
+                
+        </h3>
+
+        <h2>JavaScript Type Operators</h2>
+        <h3>
+            <table>
+                <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                <td>typeof</td>
+                <td>Returns the type of a variable</td>
+                </tr>
+                <tr>
+                <td>instanceof</td>
+                <td>Returns true if an object is an instance of an object type</td>
+                </tr>
+            </table>
+        </h3>
+
+        <h2>JavaScript Bitwise Operators</h2>
+        <h3>
+            Bit operators work on 32 bits numbers. <br>
+
+            Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number. <br>
+            <table >
+                <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Example</th>
+                <th>Same as</th>
+                <th>Result</th>
+                <th>Decimal</th>
+                </tr>
+                <tr>
+                <td>&amp;</td>
+                <td>AND</td>
+                <td>5 &amp; 1</td>
+                <td>0101 &amp; 0001</td>
+                <td>0001</td>
+                <td>&nbsp;1</td>
+                </tr>
+                <tr>
+                <td>|</td>
+                <td>OR</td>
+                <td>5 | 1</td>
+                <td>0101 | 0001</td>
+                <td>0101</td>
+                <td>&nbsp;5</td>
+                </tr>
+                <tr>
+                <td>~</td>
+                <td>NOT</td>
+                <td>~ 5</td>
+                <td>&nbsp;~0101</td>
+                <td>1010</td>
+                <td>&nbsp;10</td>
+                </tr>
+                <tr>
+                <td>^</td>
+                <td>XOR</td>
+                <td>5 ^ 1</td>
+                <td>0101 ^ 0001</td>
+                <td>0100</td>
+                <td>&nbsp;4</td>
+                </tr>
+                <tr>
+                <td>&lt;&lt;</td>
+                <td>Zero fill left shift</td>
+                <td>5 &lt;&lt; 1</td>
+                <td>0101 &lt;&lt; 1</td>
+                <td>1010</td>
+                <td>&nbsp;10</td>
+                </tr>
+                <tr>
+                <td>&gt;&gt;</td>
+                <td>Signed right shift</td>
+                <td>5 &gt;&gt; 1</td>
+                <td>0101 &gt;&gt; 1</td>
+                <td>0010</td>
+                <td>&nbsp; 2</td>
+                </tr>
+                <tr>
+                <td>&gt;&gt;&gt;</td>
+                <td>Zero fill right shift</td>
+                <td>5 &gt;&gt;&gt; 1</td>
+                <td>0101 &gt;&gt;&gt; 1</td>
+                <td>0010</td>
+                <td>&nbsp; 2</td>
+                </tr>
+            </table>
+        </h3>
+
+
+
+    </body>
+</html>
+    
+    
