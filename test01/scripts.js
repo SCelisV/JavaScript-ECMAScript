@@ -27,7 +27,7 @@ let nombre = "Sonia"
 
 // Tpos de datos simples
 // Números
-let age = 51
+let age = 19
 // String es recomendable usar los backticks `` para trabajar con strings ya que te permiten utilizar una variable
 let text = `SCelis tiene
 ${age} años`
